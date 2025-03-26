@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de QR Code</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <main>
-        <div>
-            <form action="gerarQRCode" method="post">
-                <h1>Gerador de QR Code</h1>
-                <p>Insira uma URL para gerar um QR Code</p>
-                <input type="text" name="url" id="url" required placeholder="Insira uma URL">
-                <button type="submit">Gerar QR Code</button>
-            </form>
-        
-        </div>
+      <div class="container">
+        <form action="javascript:void(0);" method="post">
+          <h1>Gerador de QR Code</h1>
+          <p>Insira uma URL para gerar um QR Code</p>
+          <input
+            type="text"
+            name="url"
+            id="url"
+            required
+            placeholder="Insira uma URL"
+          />
+          <button type="button" class="btn">Gerar QR Code</button>
+        </form>
+      </div>
+      <footer class="qrCode">
+        <img src="" alt="QR Code" class="qrCodeImg" />
+      </footer>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
