@@ -23,6 +23,7 @@ button.addEventListener("click", () => {
   });
 
   document.querySelector(".qrCodeImg").style.opacity = "1";
+  document.querySelector(".qrCode").style.display = "flex";
 
 });
 
